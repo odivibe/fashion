@@ -3,10 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body, html {
     height: 100%;
+    font-size: 100%;
 }
 
 .container {
@@ -15,13 +17,31 @@ body, html {
     background-color: red;
 }
 
+header {
+    background-color: #ffffff;
+}
+
 /* Mobile header styles */
+.menu-icon {
+    display: none;
+}
+
+.category ul li {
+    display: inline-block;
+    margin-right: 18px;
+    color: rgb(114, 114, 144);
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+}
+
+.category ul li:hover {
+    font-weight: bolder;
+}
+
 .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff; /* Adjust as per your design */
     border-bottom: 1px solid #ccc; /* Optional */
 }
 
@@ -43,10 +63,19 @@ body, html {
 }
 
 .icons .action {
-    margin-left: 10px;
+    margin-left: 18px;
     text-decoration: none;
     color: #333; /* Adjust as per your design */
     font-size: 24px; /* Adjust as per your design */
+}
+
+.desktop-navigation ul {
+    text-align: center;
+}
+
+.desktop-navigation ul li{
+    display: inline-block;
+    margin-left: 15px;
 }
 
 /* Mobile navigation styles */
@@ -135,8 +164,6 @@ body, html {
     color: #fff; /* Adjust as per your design */
     font-size: 24px; /* Adjust as per your design */
 }
-
-
 
 
 
