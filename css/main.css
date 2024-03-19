@@ -1,0 +1,203 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    height: auto;
+    position: relative;
+    background-color: red;
+}
+
+/* Mobile header styles */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Adjust as per your design */
+    border-bottom: 1px solid #ccc; /* Optional */
+}
+
+/* Logo styles */
+.logo img {
+    height: 30px; /* Adjust as per your logo size */
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    font-size: 18px; /* Adjust as per your design */
+    margin-left: 10px; /* Adjust as per your design */
+}
+
+/* Icons styles */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons .action {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333; /* Adjust as per your design */
+    font-size: 24px; /* Adjust as per your design */
+}
+
+/* Mobile navigation styles */
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure it's above other content */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.mobile-navigation.active {
+    transform: translateX(0);
+}
+
+.mobile-navigation ul {
+    list-style-type: none;
+}
+
+.mobile-navigation ul li {
+    margin-bottom: 10px;
+}
+
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #333; /* Adjust as per your design */
+    font-size: 24px; /* Adjust as per your design */
+}
+
+/* Search form for mobile styles */
+.search-form-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.search-form-mobile.active {
+    display: flex;
+}
+
+.search-form-mobile form {
+    width: 80%;
+    max-width: 400px; /* Adjust as per your design */
+    background-color: #fff; /* Adjust as per your design */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-form-mobile input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-form-mobile button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333; /* Adjust as per your design */
+    color: #fff; /* Adjust as per your design */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-search {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #fff; /* Adjust as per your design */
+    font-size: 24px; /* Adjust as per your design */
+}
+
+
+
+
+
+
+
+
+/* Footer styles */
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #874535; /* Adjust background color as per your design */
+    color: #fff; /* Adjust text color as per your design */
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 100%; /* Adjust max-width as per your design */
+    margin: 0 auto; /* Center the content */
+    padding: 10px; /* Adjust padding as per your design */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #876543;
+}
+
+.footer-section {
+    flex: 1; /* Distribute sections evenly */
+    margin-right: 10px; /* Adjust margin between sections */
+    background-color: #8a7659;
+}
+
+.footer-section:last-child {
+    margin-right: 0; /* Remove margin for the last section */
+}
+
+.footer-section h2 {
+    font-size: 20px; /* Adjust font size as per your design */
+    margin-bottom: 15px; /* Adjust margin as per your design */
+}
+
+.footer-section p {
+    font-size: 16px; /* Adjust font size as per your design */
+    margin-bottom: 10px; /* Adjust margin as per your design */
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin between icons */
+}
+
+.social-icons a:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as per your design */
+    font-size: 14px; /* Adjust font size as per your design */
+}
